@@ -10,10 +10,11 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/scss/style.css" />
+    <title>CRM Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.svg" />
   </head>
-  <body>
+  <body id="sign-in-page">
     <div class="container">
       <div class="d-flex justify-content-center align-items-center">
         <div class="sign-in col-lg-6 col-md-8 col-sm-12">
@@ -26,23 +27,45 @@
           <h2>Sign In</h2>
           <h5>Sign in to continue our application</h5>
           <form>
-            <div class="input-field">
-              <label for="exampleFormControlInput1">Email address</label> <br />
-              <input type="email" placeholder="mobarak@brainstation-23.com" />
+            <div class="form-floating">
+              <input
+                type="email"
+                class="form-control shadow-none"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
             </div>
-            <div class="input-field">
-              <label for="exampleFormControlInput1">Password</label> <br />
-              <input type="password" placeholder="Enter Your Password" />
+            <div class="form-floating">
+              <input
+                type="password"
+                class="form-control shadow-none"
+                id="floatingPassword"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Password</label>
             </div>
+            <!-- <div class="input-field">
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+
+            <div class="input-field">
+              <input type="password" required />
+              <label>Password</label>
+            </div> -->
+
             <div class="remember-container">
-              <div>
+              <div class="form-check">
                 <input
-                  type="radio"
-                  id="radio"
-                  name="fav_language"
-                  value="Remember me"
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
                 />
-                <label for="html">Remember me</label>
+                <label class="form-check-label" for="flexCheckDefault">
+                  Remember me
+                </label>
               </div>
               <div>
                 <span>
