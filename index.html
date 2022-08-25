@@ -14,73 +14,60 @@
     <title>CRM Dashboard</title>
     <link rel="icon" type="image/x-icon" href="/img/logo.svg" />
   </head>
-  <body id="sign-in-page">
-    <div class="container">
-      <div class="d-flex justify-content-center align-items-center">
-        <div class="sign-in col-lg-6 col-md-8 col-sm-12">
-          <div class="logo">
-            <div class="logo-image">
-              <img src="./img/logo.svg" class="filter-blue" alt="" />
-            </div>
-            <h1>CRM</h1>
-          </div>
-          <h2>Sign In</h2>
-          <h5>Sign in to continue our application</h5>
-          <form>
-            <div class="form-floating">
-              <input
-                type="email"
-                class="form-control shadow-none"
-                id="floatingInput"
-                placeholder="name@example.com"
-              />
-              <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating">
-              <input
-                type="password"
-                class="form-control shadow-none"
-                id="floatingPassword"
-                placeholder="Password"
-              />
-              <label for="floatingPassword">Password</label>
-            </div>
-            <!-- <div class="input-field">
-              <input type="email" required />
-              <label>Email</label>
-            </div>
-
-            <div class="input-field">
-              <input type="password" required />
-              <label>Password</label>
-            </div> -->
-
-            <div class="remember-container">
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Remember me
-                </label>
-              </div>
-              <div>
-                <span>
-                  <a class="forgot-password" href="./forgot-password.html"
-                    >Forgot password?</a
-                  >
-                </span>
-                <br />
-              </div>
-            </div>
-            <button>Sign In</button>
-            <p>Dont have an account? <a href="./sign-up.html">Sign Up</a></p>
-          </form>
+  <body id="login-signup-page">
+    <div class="login-signup">
+      <div class="logo">
+        <div class="logo-image">
+          <img src="./img/logo.svg" class="filter-blue" alt="" />
         </div>
+        <h1>CRM</h1>
       </div>
+      <h2>Sign In</h2>
+      <h5>Sign in to continue our application</h5>
+      <form>
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control shadow-none"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control shadow-none"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+
+        <div class="remember-container">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Remember me
+            </label>
+          </div>
+          <div>
+            <span>
+              <a class="forgot-password" href="./forgot-password.html"
+                >Forgot password?</a
+              >
+            </span>
+            <br />
+          </div>
+        </div>
+        <button>Sign In</button>
+        <p>Dont have an account? <a href="./sign-up.html">Sign Up</a></p>
+      </form>
     </div>
   </body>
 </html>

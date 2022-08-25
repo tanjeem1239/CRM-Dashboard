@@ -1,0 +1,72 @@
+#inbox {
+  background-color: #f8f9fb;
+}
+.dash-email {
+  background: #f8f9fb;
+  padding: 100px 36px 0 36px;
+}
+.dash-email h5.title {
+  font-weight: bold;
+  font-size: 26px;
+}
+#email-container {
+  display: flex;
+}
+
+#box-1 {
+  background-color: $color-white;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 15px;
+  width: 25%;
+  height: 100%;
+  padding: 24px;
+}
+#box-1 button {
+  background-color: $color-primary;
+  color: $color-white;
+  width: 100%;
+  padding: 9px 47px;
+  margin-bottom: 26px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+ul.email-menu li {
+  padding: 10px 0 10px;
+}
+ul.email-menu a {
+  font-size: 18px;
+  font-weight: 600;
+  color: $color-primary;
+}
+
+#box-2 {
+  background-color: $color-white;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 15px;
+  width: 75%;
+  height: calc(100vh - 140px);
+  margin-left: 30px;
+  overflow-y: scroll;
+}
+.email-preview {
+  display: flex;
+  flex-direction: column;
+}
+.email-box {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.email-name {
+  flex: 1.5;
+}
+.email-body {
+  flex: 4;
+}
+.email-date {
+  flex: 1/2;
+}
