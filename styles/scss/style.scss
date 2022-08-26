@@ -4,7 +4,7 @@
 @import "base/global";
 
 //vendors
-@import "vendors/bootstrap.scss";
+// @import "vendors/bootstrap.scss";
 
 //components
 @import "components/buttons";
@@ -15,6 +15,7 @@
 
 //layout
 @import "layout/header";
+@import "layout/nav";
 @import "layout/sidebar";
 @import "layout/footer";
 
