@@ -7,109 +7,46 @@
   font-family: "open sans";
 }
 .authentication {
-  background-color: $bg-primary;
-  background-image: url("./../../img/bg-overlay.png");
-  background-repeat: no-repeat;
+  background: #061d49 url("./../../img/bg-overlay.png") no-repeat ;
   background-size: cover;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
 }
 
 .login-signup {
   min-width: 600px;
-  background-color: $bg-white;
-  border-radius: 1.25rem;
-  padding: 2.8rem;
-  box-shadow: 0px 0px 18px rgba(6, 29, 73, 0.05);
 
-  @media (max-width: 575px) {
-    min-width: 90%;
-  }
+  @media (max-width: 575px) { min-width: 90%; }
 
   .logo {
-    display: flex;
-    .logo-image img {
+
+    img {
       max-height: 45px;
       max-width: 45px;
-    }
-    .filter-blue {
-      filter: invert(8%) sepia(60%) saturate(4390%) hue-rotate(225deg)
-        brightness(79%) contrast(102%);
-    }
-  }
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: $color-primary;
-  }
-  h2 {
-    color: $color-primary;
-    font-size: 1.625rem;
-    font-weight: 700;
-  }
-  h5 {
-    color: $color-primary;
-    font-size: 1rem;
-    padding-bottom: 1.5rem;
-    font-weight: 400;
-  }
-  .form-floating {
-    input {
-      padding: 0;
-      margin: 0;
-      width: 100%;
-      border: none;
-      border-radius: 0;
-      border-bottom: 1px solid #e0e0e0;
-      margin-bottom: 1.8rem;
-      margin-left: 0;
-      outline: none;
-    }
-    label {
-      padding-left: 0;
-      pointer-events: none;
-      font-size: 1rem;
-      font-weight: bold;
-      color: $color-primary;
-      transition: all 0.3s ease;
-    }
-    // input:focus ~ label,
-    // input:valid ~ label {
-    // }
-  }
-  .remember-container {
-    display: flex;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    #radio {
-      accent-color: $color-primary;
-    }
-  }
-  button {
-    width: 100%;
-    color: $color-white;
-    height: 2.5rem;
-    margin: 1rem 0 1rem;
-    border-radius: 5px;
-    border: 1px solid $color-primary;
-    background-color: $color-primary;
-  }
-  a {
-    color: $color-light-grey;
-    font-weight: 400;
-    text-decoration: none;
-    padding-left: 5px;
-  }
+      
+      .filter-blue {
+        filter: invert(8%) sepia(60%) saturate(4390%) hue-rotate(225deg)
+          brightness(79%) contrast(102%);
+      }
+    } 
 
-  p {
-    a {
+    h1 {
+      font-weight: 800;
       color: $color-primary;
-      font-weight: 700;
-      text-decoration: none;
-      padding-left: 5px;
     }
   }
+  
+  h2, h5, form, a{ color: $color-primary; }
+
+  .form-floating {
+    input {      
+      border: none;
+      margin-bottom: 1.8rem;
+    }
+    label { transition: all 0.3s ease; }
+  }
+  // .remember-container {
+  //   #radio {
+  //     accent-color: $color-primary;
+  //   }
+  // }
+  button { background-color: $color-primary; }  
 }
