@@ -1,23 +1,9 @@
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 250px;
-  padding: 10px 14px;
-  background-color: $color-white;
   transition: $tran-05;
   .logo {
-    display: flex;
-    align-items: center;
-    padding-bottom: 10px;
     border-bottom: 1px solid $border-color;
     .logo-image {
-      display: flex;
-      justify-content: center;
-      min-width: 45px;
       img {
-        width: 40px;
         object-fit: cover;
         .filter-blue {
           filter: invert(8%) sepia(60%) saturate(4390%) hue-rotate(225deg)
@@ -26,31 +12,16 @@ nav {
       }
     }
     .logo_name {
-      font-size: 32px;
-      font-weight: 800;
       color: $color-primary;
-      margin-left: 14px;
       transition: $tran-05;
     }
   }
 
   .nav-wrap {
-    margin-top: 40px;
     height: calc(100% - 90px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
     .nav-item {
-      list-style: none;
-
       .nav-link {
-        display: flex;
-        align-items: center;
-        height: 50px;
-        text-decoration: none;
-        position: relative;
-
         &:hover {
           &:before {
             content: "";
@@ -71,18 +42,11 @@ nav {
         }
 
         .nav-icon {
-          font-size: 24px;
           min-width: 45px;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
           color: $black-light-color;
         }
 
         .nav-text {
-          font-size: 18px;
-          font-weight: 400;
           color: $black-light-color;
           transition: $tran-05;
         }
@@ -91,24 +55,9 @@ nav {
 
     .nav-documentation {
       background: #061d49;
-      border-radius: 15px;
-      color: white;
-      padding: 1rem;
-      i {
-        font-size: 2rem;
-      }
-      h6 {
-        padding-top: 1.84375rem;
-      }
       button {
         color: #061d49;
-        width: 100%;
-        margin-top: 1.84375rem;
         padding: 9px 47px;
-        border-radius: 6px;
-        border: none;
-        font-size: 1rem;
-        font-weight: bold;
       }
     }
   }

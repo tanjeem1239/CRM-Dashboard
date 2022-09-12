@@ -1,17 +1,12 @@
 .dashboard {
-  position: relative;
   left: 250px;
   background-color: $panel-color;
-  min-height: 100vh;
   width: calc(100% - 250px);
   transition: $tran-05;
 
   .dash-content {
     background: #f8f9fb;
-    padding-top: 50px;
     .dash-chart {
-      padding: 2.25rem 2.25rem 0 2.25rem;
-
       img {
         object-fit: contain;
         box-shadow: 0px 0px 18px rgba(87, 179, 255, 0.1);
@@ -19,63 +14,27 @@
     }
 
     .title {
-      display: flex;
-      align-items: center;
-      margin: 10px 0 10px 0;
-      padding-left: 2.25rem;
-
-      i {
-        position: relative;
-        height: 35px;
-        width: 35px;
-        border-radius: 6px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-      }
-
       .text {
-        font-size: 26px;
-        font-weight: 800;
         color: var(--text-color);
-        margin-left: 10px;
       }
     }
 
     .boxes {
-      padding: 2.25rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-
       .box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 12px;
         width: calc(100% / 3 - 15px);
-        padding: 15px 20px;
-        background-color: $box1-color;
         transition: $tran-05;
         box-shadow: 0px 0px 18px rgba(87, 179, 255, 0.1);
 
         .box-icon {
-          font-size: 35px;
           color: $text-color;
         }
 
         .box-text {
           white-space: nowrap;
-          font-size: 18px;
-          font-weight: 500;
           color: $text-color;
         }
 
         .box-number {
-          font-size: 40px;
-          font-weight: 500;
           color: $text-color;
         }
       }
