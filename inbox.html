@@ -25,41 +25,66 @@
   </head>
 
   <body id="inbox-page">
-    <nav>
-      <div class="logo">
-        <div class="logo-image">
-          <img src="./img/logo.svg" class="filter-blue" alt="" />
+    <nav
+      class="position-fixed top-0 h-100 start-0 border-end bg-white p-3"
+      style="width: 250px"
+    >
+      <div class="logo d-flex align-middle pb-2">
+        <div
+          class="logo-image d-flex justify-content-center"
+          style="min-width: 45px"
+        >
+          <img
+            src="./img/logo.svg"
+            class="filter-blue"
+            style="width: 40px"
+            alt=""
+          />
         </div>
 
-        <span class="logo_name">CRM</span>
+        <span class="logo_name display-6 fw-bolder ml-3">CRM</span>
       </div>
 
-      <div class="nav-wrap">
+      <div class="nav-wrap mt-4 d-flex flex-column justify-content-between">
         <ul class="nav-items list-unstyled">
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="uil uil-chart-pie-alt nav-icon"></i>
-              <span class="nav-text">Dahsboard</span>
+            <a
+              class="nav-link d-flex align-items-center position-relative text-decoration-none"
+              style="height: 50px"
+              href="./dashboard.html"
+            >
+              <i
+                class="uil uil-chart-pie-alt nav-icon d-flex align-items-center justify-content-center h-100 fs-5"
+              ></i>
+              <span class="nav-text fs-5 fw-normal">Dahsboard</span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="./inbox.html">
-              <i class="uil uil-envelope nav-icon"></i>
-              <span class="nav-text">Inbox</span>
+            <a
+              class="nav-link d-flex align-items-center position-relative text-decoration-none"
+              style="height: 50px"
+              href="./inbox.html"
+            >
+              <i
+                class="uil uil-envelope nav-icon d-flex align-items-center justify-content-center h-100 fs-5"
+              ></i>
+              <span class="nav-text fs-5 fw-normal">Inbox</span>
             </a>
           </li>
         </ul>
-        <div class="nav-documentation">
-          <i class="uil uil-question-circle"></i>
-          <h6>Need Help?</h6>
+        <div class="nav-documentation rounded p-3 text-white">
+          <i class="uil uil-question-circle fs-1"></i>
+          <h5 class="h5 pt-2">Need Help?</h5>
           <p>Please check our docs</p>
-          <button>Document</button>
+          <button class="w-100 mt-2 rounded fs-6 border-0 fw-bold">
+            Document
+          </button>
         </div>
       </div>
     </nav>
 
-    <main class="dashboard">
+    <main class="dashboard position-relative min-vh-100">
       <header class="header-container shadow-sm">
         <div class="search-box">
           <i class="uil uil-search"></i>
@@ -78,48 +103,70 @@
       </header>
 
       <div class="dash-email">
-        <h5 class="dash-email-text">Inbox</h5>
-        <div id="email-container">
-          <div id="box-1">
-            <button class="compose-button">Compose</button>
+        <h5 class="dash-email-text fw-bold">Inbox</h5>
+        <div id="email-container" class="d-flex">
+          <div id="box-1" class="bg-white shadow-sm rounded w-25 h-100 p-4">
+            <button
+              class="compose-button text-white w-100 px-0 py-2 mb-3 rounded fs-6 border-0 fw-bold"
+            >
+              Compose
+            </button>
             <ul class="email-menu list-unstyled text-decoration-none">
-              <li class="email-menu-item">
-                <a href="#" class="email-menu-link text-decoration-none">
+              <li class="email-menu-item pt-2 pb-2">
+                <a
+                  href="#"
+                  class="email-menu-link text-decoration-none fs-5 fw-semibold"
+                >
                   <i class="uil uil-inbox"></i>
                   <span>Inbox</span>
                 </a>
               </li>
 
-              <li class="email-menu-item">
-                <a href="#" class="email-menu-link text-decoration-none">
+              <li class="email-menu-item pt-2 pb-2">
+                <a
+                  href="#"
+                  class="email-menu-link text-decoration-none fs-5 fw-semibold"
+                >
                   <i class="uil uil-users-alt"></i>
                   <span>Lead</span>
                 </a>
               </li>
 
-              <li class="email-menu-item">
-                <a href="#" class="email-menu-link text-decoration-none">
+              <li class="email-menu-item pt-2 pb-2">
+                <a
+                  href="#"
+                  class="email-menu-link text-decoration-none fs-5 fw-semibold"
+                >
                   <i class="uil uil-bullseye"></i>
                   <span>Prospect</span>
                 </a>
               </li>
 
-              <li class="email-menu-item">
-                <a href="#" class="email-menu-link text-decoration-none">
+              <li class="email-menu-item pt-2 pb-2">
+                <a
+                  href="#"
+                  class="email-menu-link text-decoration-none fs-5 fw-semibold"
+                >
                   <i class="uil uil-user"></i>
                   <span>Customer</span>
                 </a>
               </li>
 
-              <li class="email-menu-item">
-                <a href="#" class="email-menu-link text-decoration-none">
+              <li class="email-menu-item pt-2 pb-2">
+                <a
+                  href="#"
+                  class="email-menu-link text-decoration-none fs-5 fw-semibold"
+                >
                   <i class="uil uil-file"></i>
                   <span>Spam</span>
                 </a>
               </li>
 
-              <li class="email-menu-item">
-                <a href="#" class="email-menu-link text-decoration-none">
+              <li class="email-menu-item pt-2 pb-2">
+                <a
+                  href="#"
+                  class="email-menu-link text-decoration-none fs-5 fw-semibold"
+                >
                   <i class="uil uil-times-circle"></i>
                   <span>Closed</span>
                 </a>
@@ -127,9 +174,12 @@
             </ul>
           </div>
 
-          <div id="box-2">
-            <div class="email-preview">
-              <div class="email-box">
+          <div
+            id="box-2"
+            class="container bg-white shadow-sm rounded w-75 mx-3 overflow-auto"
+          >
+            <div class="email-preview d-flex flex-column">
+              <div class="email-box d-flex p-4 border-bottom">
                 <div class="email-checkbox">
                   <i class="uil uil-square-shape"></i>
                   <i class="uil uil-star"></i>
@@ -137,7 +187,7 @@
                 <div class="email-name">
                   <span>Peter,me (3)</span>
                 </div>
-                <div class="email-body">
+                <div class="email-body col-6">
                   <span
                     >Hello – Trip home from Colombo has been arranged,
                     then...</span
@@ -148,7 +198,7 @@
                 </div>
               </div>
 
-              <div class="email-box">
+              <div class="email-box d-flex p-4 border-bottom">
                 <div class="email-checkbox">
                   <i class="uil uil-square-shape"></i>
                   <i class="uil uil-star"></i>
@@ -167,7 +217,7 @@
                 </div>
               </div>
 
-              <div class="email-box">
+              <div class="email-box d-flex p-4 border-bottom">
                 <div class="email-checkbox">
                   <i class="uil uil-square-shape"></i>
                   <i class="uil uil-star"></i>
@@ -183,7 +233,7 @@
                 </div>
               </div>
 
-              <div class="email-box">
+              <div class="email-box d-flex p-4 border-bottom">
                 <div class="email-checkbox">
                   <i class="uil uil-square-shape"></i>
                   <i class="uil uil-star"></i>
@@ -199,7 +249,7 @@
                 </div>
               </div>
 
-              <div class="email-box">
+              <div class="email-box d-flex p-4 border-bottom">
                 <div class="email-checkbox">
                   <i class="uil uil-square-shape"></i>
                   <i class="uil uil-star"></i>
@@ -215,7 +265,7 @@
                 </div>
               </div>
 
-              <div class="email-box">
+              <div class="email-box d-flex p-4 border-bottom">
                 <div class="email-checkbox">
                   <i class="uil uil-square-shape"></i>
                   <i class="uil uil-star"></i>
@@ -234,7 +284,7 @@
                 </div>
               </div>
 
-              <div class="email-box">
+              <div class="email-box d-flex p-4 border-bottom">
                 <div class="email-checkbox">
                   <i class="uil uil-square-shape"></i>
                   <i class="uil uil-star"></i>
@@ -253,7 +303,7 @@
                 </div>
               </div>
 
-              <div class="email-box">
+              <div class="email-box d-flex p-4 border-bottom">
                 <div class="email-checkbox">
                   <i class="uil uil-square-shape"></i>
                   <i class="uil uil-star"></i>

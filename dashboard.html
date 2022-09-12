@@ -24,41 +24,69 @@
     <title>Admin Dashboard Panel</title>
   </head>
   <body>
-    <nav class="border-end">
-      <div class="logo">
-        <div class="logo-image">
-          <img src="./img/logo.svg" class="filter-blue" alt="" />
+    <!-- Navbar Section -->
+    <nav
+      class="position-fixed top-0 h-100 start-0 border-end bg-white p-3"
+      style="width: 250px"
+    >
+      <div class="logo d-flex align-middle pb-2">
+        <div
+          class="logo-image d-flex justify-content-center"
+          style="min-width: 45px"
+        >
+          <img
+            src="./img/logo.svg"
+            class="filter-blue"
+            style="width: 40px"
+            alt=""
+          />
         </div>
 
-        <span class="logo_name">CRM</span>
+        <span class="logo_name display-6 fw-bolder ml-3">CRM</span>
       </div>
 
-      <div class="nav-wrap">
+      <div class="nav-wrap mt-4 d-flex flex-column justify-content-between">
         <ul class="nav-items list-unstyled">
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="uil uil-chart-pie-alt nav-icon"></i>
-              <span class="nav-text">Dahsboard</span>
+            <a
+              class="nav-link d-flex align-items-center position-relative text-decoration-none"
+              style="height: 50px"
+              href="#"
+            >
+              <i
+                class="uil uil-chart-pie-alt nav-icon d-flex align-items-center justify-content-center h-100 fs-5"
+              ></i>
+              <span class="nav-text fs-5 fw-normal">Dahsboard</span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="./inbox.html">
-              <i class="uil uil-envelope nav-icon"></i>
-              <span class="nav-text">Inbox</span>
+            <a
+              class="nav-link d-flex align-items-center position-relative text-decoration-none"
+              style="height: 50px"
+              href="./inbox.html"
+            >
+              <i
+                class="uil uil-envelope nav-icon d-flex align-items-center justify-content-center h-100 fs-5"
+              ></i>
+              <span class="nav-text fs-5 fw-normal">Inbox</span>
             </a>
           </li>
         </ul>
-        <div class="nav-documentation">
-          <i class="uil uil-question-circle"></i>
-          <h6>Need Help?</h6>
+        <div class="nav-documentation rounded p-3 text-white">
+          <i class="uil uil-question-circle fs-1"></i>
+          <h5 class="h5 pt-2">Need Help?</h5>
           <p>Please check our docs</p>
-          <button>Document</button>
+          <button class="w-100 mt-2 rounded fs-6 border-0 fw-bold">
+            Document
+          </button>
         </div>
       </div>
     </nav>
 
-    <main class="dashboard">
+    <!-- Dashboard-->
+    <main class="dashboard position-relative min-vh-100">
+      <!-- Dashboard Header-->
       <header class="header-container shadow-sm">
         <div class="search-box">
           <i class="uil uil-search"></i>
@@ -76,30 +104,39 @@
         <img class="profile-img" src="./img/profile.png" alt="" />
       </header>
 
-      <section class="dash-content">
-        <div class="dash-chart">
+      <!-- Dashboard Content-->
+      <section class="dash-content pt-5">
+        <div class="dash-chart p-5">
           <img src="./img/chart.png" height="100%" width="100%" alt="" />
         </div>
         <div class="overview">
           <div class="title">
-            <span class="text">Analytics Overview</span>
+            <span class="text px-5 fs-3 fw-bolder">Analytics Overview</span>
           </div>
 
-          <div class="boxes">
-            <div class="box box1">
-              <i class="uil uil-user box-icon"></i>
-              <span class="box-number">4.5k</span>
-              <span class="box-text">Total Customers</span>
+          <div
+            class="boxes p-5 d-flex align-items-center justify-content-between flex-wrap"
+          >
+            <div
+              class="box d-flex flex-column align-items-center rounded-4 shadow-sm p-4 bg-white"
+            >
+              <i class="uil uil-user box-icon fs-2"></i>
+              <span class="box-number fs-1">4.5k</span>
+              <span class="box-text fs-5 fw-semibold">Total Customers</span>
             </div>
-            <div class="box box2">
-              <i class="uil uil-bullseye box-icon"></i>
-              <span class="box-number">3.5k</span>
-              <span class="box-text">Total Prospects</span>
+            <div
+              class="box d-flex flex-column align-items-center rounded-4 shadow-sm p-4 bg-white"
+            >
+              <i class="uil uil-bullseye box-icon fs-2"></i>
+              <span class="box-number fs-1">3.5k</span>
+              <span class="box-text fs-5 fw-semibold">Total Prospects</span>
             </div>
-            <div class="box box3">
-              <i class="uil uil-users-alt box-icon"></i>
-              <span class="box-number">38.20</span>
-              <span class="box-text">Total Lead</span>
+            <div
+              class="box d-flex flex-column align-items-center rounded-4 shadow-sm p-4 bg-white"
+            >
+              <i class="uil uil-users-alt box-icon fs-2"></i>
+              <span class="box-number fs-1">38.20</span>
+              <span class="box-text fs-5 fw-semibold">Total Lead</span>
             </div>
           </div>
         </div>
