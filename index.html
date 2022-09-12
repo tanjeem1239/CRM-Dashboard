@@ -14,61 +14,63 @@
     <title>CRM Dashboard</title>
     <link rel="icon" type="image/x-icon" href="/img/logo.svg" />
   </head>
-  <body id="login-signup-page">
-    <div class="login-signup">
-      <div class="logo">
-        <div class="logo-image">
-          <img src="./img/logo.svg" class="filter-blue" alt="" />
+  <body>
+    <div class="authentication">
+      <div class="login-signup">
+        <div class="logo">
+          <div class="logo-image">
+            <img src="./img/logo.svg" class="filter-blue" alt="logo" />
+          </div>
+          <h1>CRM</h1>
         </div>
-        <h1>CRM</h1>
-      </div>
-      <h2>Sign In</h2>
-      <h5>Sign in to continue our application</h5>
-      <form>
-        <div class="form-floating">
-          <input
-            type="email"
-            class="form-control shadow-none px-1"
-            id="floatingInput"
-            placeholder="name@example.com"
-            autofocus
-          />
-          <label class="pt-2" for="floatingInput">Email address</label>
-        </div>
-        <div class="form-floating">
-          <input
-            type="password"
-            class="form-control shadow-none px-1"
-            id="floatingPassword"
-            placeholder="Password"
-          />
-          <label class="pt-2" for="floatingPassword">Password</label>
-        </div>
-
-        <div class="remember-container">
-          <div class="form-check">
+        <h2>Sign In</h2>
+        <h5>Sign in to continue our application</h5>
+        <form>
+          <div class="form-floating">
             <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="flexCheckDefault"
+              type="email"
+              class="form-control shadow-none px-1"
+              id="floatingInput"
+              placeholder="name@example.com"
+              autofocus
             />
-            <label class="form-check-label" for="flexCheckDefault">
-              Remember me
-            </label>
+            <label class="pt-2" for="floatingInput">Email address</label>
           </div>
-          <div>
-            <span>
-              <a class="forgot-password" href="./forgot-password.html"
-                >Forgot password?</a
-              >
-            </span>
-            <br />
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control shadow-none px-1"
+              id="floatingPassword"
+              placeholder="Password"
+            />
+            <label class="pt-2" for="floatingPassword">Password</label>
           </div>
-        </div>
-        <button>Sign In</button>
-        <p>Dont have an account? <a href="./sign-up.html">Sign Up</a></p>
-      </form>
+
+          <div class="remember-container">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Remember me
+              </label>
+            </div>
+            <div>
+              <span>
+                <a class="forgot-password" href="./forgot-password.html"
+                  >Forgot password?</a
+                >
+              </span>
+              <br />
+            </div>
+          </div>
+          <button>Sign In</button>
+          <p>Dont have an account? <a href="./sign-up.html">Sign Up</a></p>
+        </form>
+      </div>
     </div>
   </body>
 </html>

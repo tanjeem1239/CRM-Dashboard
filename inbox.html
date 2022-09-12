@@ -1,263 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!----======== BOOTSTRAP CSS ======== -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
-  <!----======== CSS ======== -->
-  <link rel="stylesheet" href="./styles/scss/style.css" />
+    <!----======== BOOTSTRAP CSS ======== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="./styles/scss/style.css" />
 
-  <!----===== Iconscout CSS ===== -->
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!----===== Iconscout CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 
-  <title>Admin Dashboard Panel</title>
-</head>
+    <title>Admin Dashboard Panel</title>
+  </head>
 
-<body id="inbox-page">
-  <nav>
-    <div class="logo">
-      <div class="logo-image">
-        <img src="./img/logo.svg" class="filter-blue" alt="" />
-      </div>
-
-      <span class="logo_name">CRM</span>
-    </div>
-
-    <div class="nav-wrap">
-      <ul class="nav-items list-unstyled">
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="uil uil-chart-pie-alt nav-icon"></i>
-            <span class="nav-text">Dahsboard</span>
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="./inbox.html">
-            <i class="uil uil-envelope nav-icon"></i>
-            <span class="nav-text">Inbox</span>
-          </a>
-        </li>
-      </ul>
-      <div class="nav-documentation">
-        <i class="uil uil-question-circle"></i>
-        <h6>Need Help?</h6>
-        <p>Please check our docs</p>
-        <button>Document</button>
-      </div>
-    </div>
-  </nav>
-
-  <main class="dashboard">
-    <header class="header-container shadow-sm">
-      <div class="search-box">
-        <i class="uil uil-search"></i>
-        <input type="text" placeholder="Search for a contact" />
-      </div>
-
-      <div class="profile-container">
-        <i class="uil uil-bell profile-notification"></i>
-        <div class="profile-info">
-          <span class="profile-name">Hello,Franklin</span>
-          <p class="profile-role">Super Admin</p>
-        </div>
-      </div>
-
-      <img class="profile-img" src="./img/profile.png" alt="" />
-    </header>
-
-    <div class="dash-email">
-      <h5 class="dash-email-text">Inbox</h5>
-      <div id="email-container">
-
-        <div id="box-1" >
-          <button class="compose-button">Compose</button>
-          <ul class="email-menu list-unstyled text-decoration-none">
-            <li class="email-menu-item">
-              <a href="#" class="email-menu-link text-decoration-none">
-                <i class="uil uil-inbox"></i>
-                <span>Inbox</span>
-              </a>
-            </li>
-
-            <li class="email-menu-item">
-              <a href="#" class="email-menu-link text-decoration-none">
-                <i class="uil uil-users-alt"></i>
-                <span>Lead</span>
-              </a>
-            </li>
-
-            <li class="email-menu-item">
-              <a href="#" class="email-menu-link text-decoration-none">
-                <i class="uil uil-bullseye"></i>
-                <span>Prospect</span>
-              </a>
-            </li>
-
-            <li class="email-menu-item">
-              <a href="#" class="email-menu-link text-decoration-none">
-                <i class="uil uil-user"></i>
-                <span>Customer</span>
-              </a>
-            </li>
-
-            <li class="email-menu-item">
-              <a href="#" class="email-menu-link text-decoration-none">
-                <i class="uil uil-file"></i>
-                <span>Spam</span>
-              </a>
-            </li>
-
-            <li class="email-menu-item">
-              <a href="#" class="email-menu-link text-decoration-none">
-                <i class="uil uil-times-circle"></i>
-                <span>Closed</span>
-              </a>
-            </li>
-          </ul>
+  <body id="inbox-page">
+    <nav>
+      <div class="logo">
+        <div class="logo-image">
+          <img src="./img/logo.svg" class="filter-blue" alt="" />
         </div>
 
-        <div id="box-2">
-          <div class="email-preview">
+        <span class="logo_name">CRM</span>
+      </div>
 
-            <div class="email-box">
-              <div class="email-checkbox">
-                <i class="uil uil-square-shape"></i>
-                <i class="uil uil-star"></i>
-              </div>
-              <div class="email-name">
-                <span>Peter,me (3)</span>
-              </div>
-              <div class="email-body">
-                <span>Hello – Trip home from Colombo has been arranged, then...</span>
-              </div>
-              <div class="email-date">
-                <span>Mar 6</span>
-              </div>
-            </div>
+      <div class="nav-wrap">
+        <ul class="nav-items list-unstyled">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="uil uil-chart-pie-alt nav-icon"></i>
+              <span class="nav-text">Dahsboard</span>
+            </a>
+          </li>
 
-            <div class="email-box">
-              <div class="email-checkbox">
-                <i class="uil uil-square-shape"></i>
-                <i class="uil uil-star"></i>
-              </div>
-              <div class="email-name">
-                <span>Charukaw, me (7)</span>
-              </div>
-              <div class="email-body">
-                <span>Since you asked... and i'm inconceivably bored at the train...</span>
-              </div>
-              <div class="email-date">
-                <span >Mar 4</span>
-              </div>
-             
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="./inbox.html">
+              <i class="uil uil-envelope nav-icon"></i>
+              <span class="nav-text">Inbox</span>
+            </a>
+          </li>
+        </ul>
+        <div class="nav-documentation">
+          <i class="uil uil-question-circle"></i>
+          <h6>Need Help?</h6>
+          <p>Please check our docs</p>
+          <button>Document</button>
+        </div>
+      </div>
+    </nav>
 
-            <div class="email-box">
-              <div class="email-checkbox">
-                <i class="uil uil-square-shape"></i>
-                <i class="uil uil-star"></i>
-              </div>
-              <div class="email-name">
-                <span>Stack Exchange</span>
-              </div>
-              <div class="email-body">
-                <span>1 new items in your Stackexchange inbox..</span>
-              </div>
-              <div class="email-date">
-                <span >Mar 2</span>
-              </div>
-            </div>
+    <main class="dashboard">
+      <header class="header-container shadow-sm">
+        <div class="search-box">
+          <i class="uil uil-search"></i>
+          <input type="text" placeholder="Search for a contact" />
+        </div>
 
-            <div class="email-box">
-              <div class="email-checkbox">
-                <i class="uil uil-square-shape"></i>
-                <i class="uil uil-star"></i>
-              </div>
-              <div class="email-name">
-                <span>Google Drive Team</span>
-              </div>
-              <div class="email-body">
-                <span>Trip home from Colombo has been arranged, then...</span>
-              </div>
-              <div class="email-date">
-                <span >Mar 1</span>
-              </div>
-            </div>
-
-            <div class="email-box">
-              <div class="email-checkbox">
-                <i class="uil uil-square-shape"></i>
-                <i class="uil uil-star"></i>
-              </div>
-              <div class="email-name">
-                <span>Peter, me (3)</span>
-              </div>
-              <div class="email-body">
-                <span>Colombo has been arranged, then...</span>
-              </div>
-              <div class="email-date">
-                <span >Feb 29</span>
-              </div>
-            </div>
-
-            <div class="email-box">
-              <div class="email-checkbox">
-                <i class="uil uil-square-shape"></i>
-                <i class="uil uil-star"></i>
-              </div>
-              <div class="email-name">
-                <span>me, Susanna (11)</span>
-              </div>
-              <div class="email-body">
-                <span>Hello – Trip home from Colombo has been arranged, then...</span>
-              </div>
-              <div class="email-date">
-                <span >Feb 28</span>
-              </div>
-            </div>
-
-            <div class="email-box">
-              <div class="email-checkbox">
-                <i class="uil uil-square-shape"></i>
-                <i class="uil uil-star"></i>
-              </div>
-              <div class="email-name">
-                <span>Tobias Berggren</span>
-              </div>
-              <div class="email-body">
-                <span>Let's go fishing! – Hey, You wanna join me and Fred at the...</span>
-              </div>
-              <div class="email-date">
-                <span >Feb 26</span>
-              </div>
-            </div>
-
-            <div class="email-box">
-              <div class="email-checkbox">
-                <i class="uil uil-square-shape"></i>
-                <i class="uil uil-star"></i>
-              </div>
-              <div class="email-name">
-                <span>Erik, me (5)</span>
-              </div>
-              <div class="email-body">
-                <span>Hello – Trip home from Colombo has been arranged, then...</span>
-              </div>
-              <div class="email-date">
-                <span >Feb 25</span>
-              </div>
-            </div>
-            
+        <div class="profile-container">
+          <i class="uil uil-bell profile-notification"></i>
+          <div class="profile-info">
+            <span class="profile-name">Hello,Franklin</span>
+            <p class="profile-role">Super Admin</p>
           </div>
         </div>
-    </div>
-  </main>
 
-</body>
+        <img class="profile-img" src="./img/profile.png" alt="" />
+      </header>
 
+      <div class="dash-email">
+        <h5 class="dash-email-text">Inbox</h5>
+        <div id="email-container">
+          <div id="box-1">
+            <button class="compose-button">Compose</button>
+            <ul class="email-menu list-unstyled text-decoration-none">
+              <li class="email-menu-item">
+                <a href="#" class="email-menu-link text-decoration-none">
+                  <i class="uil uil-inbox"></i>
+                  <span>Inbox</span>
+                </a>
+              </li>
+
+              <li class="email-menu-item">
+                <a href="#" class="email-menu-link text-decoration-none">
+                  <i class="uil uil-users-alt"></i>
+                  <span>Lead</span>
+                </a>
+              </li>
+
+              <li class="email-menu-item">
+                <a href="#" class="email-menu-link text-decoration-none">
+                  <i class="uil uil-bullseye"></i>
+                  <span>Prospect</span>
+                </a>
+              </li>
+
+              <li class="email-menu-item">
+                <a href="#" class="email-menu-link text-decoration-none">
+                  <i class="uil uil-user"></i>
+                  <span>Customer</span>
+                </a>
+              </li>
+
+              <li class="email-menu-item">
+                <a href="#" class="email-menu-link text-decoration-none">
+                  <i class="uil uil-file"></i>
+                  <span>Spam</span>
+                </a>
+              </li>
+
+              <li class="email-menu-item">
+                <a href="#" class="email-menu-link text-decoration-none">
+                  <i class="uil uil-times-circle"></i>
+                  <span>Closed</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div id="box-2">
+            <div class="email-preview">
+              <div class="email-box">
+                <div class="email-checkbox">
+                  <i class="uil uil-square-shape"></i>
+                  <i class="uil uil-star"></i>
+                </div>
+                <div class="email-name">
+                  <span>Peter,me (3)</span>
+                </div>
+                <div class="email-body">
+                  <span
+                    >Hello – Trip home from Colombo has been arranged,
+                    then...</span
+                  >
+                </div>
+                <div class="email-date">
+                  <span>Mar 6</span>
+                </div>
+              </div>
+
+              <div class="email-box">
+                <div class="email-checkbox">
+                  <i class="uil uil-square-shape"></i>
+                  <i class="uil uil-star"></i>
+                </div>
+                <div class="email-name">
+                  <span>Charukaw, me (7)</span>
+                </div>
+                <div class="email-body">
+                  <span
+                    >Since you asked... and i'm inconceivably bored at the
+                    train...</span
+                  >
+                </div>
+                <div class="email-date">
+                  <span>Mar 4</span>
+                </div>
+              </div>
+
+              <div class="email-box">
+                <div class="email-checkbox">
+                  <i class="uil uil-square-shape"></i>
+                  <i class="uil uil-star"></i>
+                </div>
+                <div class="email-name">
+                  <span>Stack Exchange</span>
+                </div>
+                <div class="email-body">
+                  <span>1 new items in your Stackexchange inbox..</span>
+                </div>
+                <div class="email-date">
+                  <span>Mar 2</span>
+                </div>
+              </div>
+
+              <div class="email-box">
+                <div class="email-checkbox">
+                  <i class="uil uil-square-shape"></i>
+                  <i class="uil uil-star"></i>
+                </div>
+                <div class="email-name">
+                  <span>Google Drive Team</span>
+                </div>
+                <div class="email-body">
+                  <span>Trip home from Colombo has been arranged, then...</span>
+                </div>
+                <div class="email-date">
+                  <span>Mar 1</span>
+                </div>
+              </div>
+
+              <div class="email-box">
+                <div class="email-checkbox">
+                  <i class="uil uil-square-shape"></i>
+                  <i class="uil uil-star"></i>
+                </div>
+                <div class="email-name">
+                  <span>Peter, me (3)</span>
+                </div>
+                <div class="email-body">
+                  <span>Colombo has been arranged, then...</span>
+                </div>
+                <div class="email-date">
+                  <span>Feb 29</span>
+                </div>
+              </div>
+
+              <div class="email-box">
+                <div class="email-checkbox">
+                  <i class="uil uil-square-shape"></i>
+                  <i class="uil uil-star"></i>
+                </div>
+                <div class="email-name">
+                  <span>me, Susanna (11)</span>
+                </div>
+                <div class="email-body">
+                  <span
+                    >Hello – Trip home from Colombo has been arranged,
+                    then...</span
+                  >
+                </div>
+                <div class="email-date">
+                  <span>Feb 28</span>
+                </div>
+              </div>
+
+              <div class="email-box">
+                <div class="email-checkbox">
+                  <i class="uil uil-square-shape"></i>
+                  <i class="uil uil-star"></i>
+                </div>
+                <div class="email-name">
+                  <span>Tobias Berggren</span>
+                </div>
+                <div class="email-body">
+                  <span
+                    >Let's go fishing! – Hey, You wanna join me and Fred at
+                    the...</span
+                  >
+                </div>
+                <div class="email-date">
+                  <span>Feb 26</span>
+                </div>
+              </div>
+
+              <div class="email-box">
+                <div class="email-checkbox">
+                  <i class="uil uil-square-shape"></i>
+                  <i class="uil uil-star"></i>
+                </div>
+                <div class="email-name">
+                  <span>Erik, me (5)</span>
+                </div>
+                <div class="email-body">
+                  <span
+                    >Hello – Trip home from Colombo has been arranged,
+                    then...</span
+                  >
+                </div>
+                <div class="email-date">
+                  <span>Feb 25</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
