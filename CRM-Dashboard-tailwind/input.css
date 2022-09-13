@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .authentication{
+        @apply bg-cover bg-bg-overlay bg-no-repeat 
+    }
+    .filter-blue {
+        filter: invert(8%) sepia(60%) saturate(4390%) hue-rotate(225deg)
+          brightness(79%) contrast(102%);
+      }
+
+      
+    
+}
+

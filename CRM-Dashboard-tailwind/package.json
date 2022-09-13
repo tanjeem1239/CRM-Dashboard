@@ -1,0 +1,20 @@
+{
+  "name": "crm-dashboard-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "build": "tailwindcss -i ./input.css -o ./styles/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./styles/main.css --watch",
+    "lite": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "lite-server": "^2.6.1",
+    "tailwindcss": "^3.1.8"
+  }
+}
