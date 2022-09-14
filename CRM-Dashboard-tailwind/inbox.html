@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard Panel</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="w-full flex justify-center text-blue bg-gray-100">
+        <!-- Dashboard SideBar -->
+        <div class="w-[17%] border-r-2 border-gray-100 px-2 bg-white"> 
+            <div class="flex pl-0 lg:pl-6 h-[13vh] border-b-2 border-gray-100 items-center justify-center lg:justify-start gap-1"> <!-- Logo -->
+                <img src="styles/img/logo.svg" class="filter-blue h-12 xl:h-14" alt="">
+                <h1 class="text-4xl xl:text-5xl font-extrabold hidden lg:block">CRM</h1>
+            </div>
+            <div class="flex flex-col justify-end h-[87vh]"> <!-- Menu -->
+                <div class="h-1/2">
+                    <a href="dashboard.html">
+                        <div class="py-8 pl-0 lg:pl-6 text-gray-500 hover:text-gray-700 flex items-center justify-center lg:justify-start gap-4" title="Dashboard">
+                            <i class="text-xl uil uil-chart-pie-alt" title="Dashboard"></i>
+                            <h1 class="text-xl hidden lg:block">Dashboard</h1>
+                        </div>
+                    </a>
+                    <a href="inbox.html">
+                        <div class="pl-0 lg:pl-6 text-gray-500 hover:text-gray-700 flex items-center justify-center lg:justify-start gap-4" title="Inbox">
+                            <i class="text-xl uil uil-envelope"></i>
+                            <h1 class="text-xl hidden lg:block">Inbox</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex flex-col h-1/2 justify-end">
+                    <div class="bg-blue hidden xl:flex flex-col p-5 text-white rounded-lg gap-3 mx-3 ">
+                        <i class="uil uil-question-circle text-4xl"></i>
+                        <h5 class="text-3xl font-semibold">Need Help?</h5>
+                        <p>Please check our docs</p>
+                        <button class="bg-white w-100 text-blue font-bold mt-4 py-2 rounded-md">
+                            Document
+                        </button>
+                    </div>
+                </div>            
+            </div>            
+        </div>
+        <!-- Dashboard Content -->
+        <div class="w-[83%]"> 
+            <!-- Dashboard Header -->
+            <div class="logo flex h-[13vh] border-b-2 border-gray-100 items-center justify-end sm:justify-between gap-1 px-4 md:px-10 bg-white"> 
+                <div class="space-x-4 hidden sm:block"> <!-- Search -->                    
+                    <i class="text-2xl text-gray-500 uil uil-search"></i>
+                    <input type="text" placeholder="Search for a contact" class="focus:outline-none" />                        
+                </div>
+                <div class="flex items-center justify-between text-gray-500 gap-3 md:gap-4"> <!-- Profile Badge -->
+                    <i class="text-2xl md:text-4xl first-letter:uil uil-bell profile-notification"></i>
+                    <div class="text-center">
+                        <p class="text-black font-bold text-sm md:text-md">Hello, Franklin</p>
+                        <p class="text-xs">Super Admin</p>
+                    </div>
+                    <img src="styles/img/profile.png" alt="admin" class="rounded-full h-10">
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="px-4 md:px-10 ">
+                <div class="w-full py-5">
+                    <p class="text-2xl font-bold text-blue">Inbox</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="h-[50%] w-[22%] bg-white p-5 space-y-4 rounded-md hidden lg:block">
+                        <button class="bg-blue text-white font-bold text-md w-full rounded-md py-2">Compose</button>
+                        <ul class="space-y-4">
+                            <li>
+                                <div class="text-blue font-semibold hover:text-gray-700 flex items-center justify-start gap-4 cursor-pointer" title="Inbox">
+                                    <i class="text-xl uil uil-inbox"></i>
+                                    <h1 class="text-md hidden lg:block">Inbox</h1>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="text-blue font-semibold hover:text-gray-700 flex items-center justify-start gap-4 cursor-pointer" title="Inbox">
+                                    <i class="text-xl uil uil-users-alt"></i>
+                                    <h1 class="text-md hidden lg:block">Lead</h1>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="text-blue font-semibold hover:text-gray-700 flex items-center justify-start gap-4 cursor-pointer" title="Inbox">
+                                    <i class="text-xl uil uil-bullseye"></i>
+                                    <h1 class="text-md hidden lg:block">Prospect</h1>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="text-blue font-semibold hover:text-gray-700 flex items-center justify-start gap-4 cursor-pointer" title="Inbox">
+                                    <i class="text-xluil uil-user"></i>
+                                    <h1 class="text-md hidden lg:block">Customer</h1>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="text-blue font-semibold hover:text-gray-700 flex items-center justify-start gap-4 cursor-pointer" title="Inbox">
+                                    <i class="text-xl uil uil-inbox"></i>
+                                    <h1 class="text-md hidden lg:block">Spam</h1>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="text-blue font-semibold hover:text-gray-700 flex items-center justify-start gap-4 cursor-pointer" title="Inbox">
+                                    <i class="text-xl uil uil-times-circle"></i>
+                                    <h1 class="text-md hidden lg:block">Closed</h1>
+                                </div>
+                            </li>
+                            
+                        </ul>                        
+                    </div>
+                    <div class="w-full lg:w-[78%] bg-white p-2 md:p-4 lg:p-5 rounded-md flex flex-col">
+                        <div class="flex items-center justify-start gap-6 py-6 border-b-2 border-gray-100">
+                            <div class="hidden lg:flex gap-2 w-auto">
+                                <i class="uil uil-square-shape"></i>
+                                <i class="uil uil-star"></i>
+                            </div>
+                            <div class="w-[70%] md:w-[95%] flex flex-col md:flex-row justify-start items-start md:items-center gap-3">
+                                <p class="text-[1.15rem] w-full md:w-[25%] font-semibold">Peter, me (3)</p>
+                                <p class="text-sm md:text-[1.15rem] font-extralight md:font-normal mt-3 md:mt-0">Hello – Trip home from Colombo has been arranged, then...</p>
+                            </div>                            
+                            <p class="text-sm md:text-[1.1rem] w-[25%] md:w-[15%] text-end">Mar 6</p>                        
+                        </div>
+                        <div class="flex items-center justify-start gap-6 py-5 border-b-2 border-gray-100">
+                            <div class="hidden lg:flex gap-2 w-auto">
+                                <i class="uil uil-square-shape"></i>
+                                <i class="uil uil-star"></i>
+                            </div>
+                            <div class="w-[70%] md:w-[95%] flex flex-col md:flex-row justify-start items-start md:items-center gap-3">
+                                <p class="text-[1.15rem] w-full md:w-[25%] font-semibold">Charukaw, me (7)</p>
+                                <p class="text-sm md:text-[1.15rem] font-extralight md:font-normal mt-3 md:mt-0">Since you asked... and i'm inconceivably bored at the train...</p>
+                            </div>                            
+                            <p class="text-sm md:text-[1.1rem] w-[25%] md:w-[15%] text-end">Mar 4</p>                        
+                        </div>
+                        <div class="flex items-center justify-start gap-6 py-5 border-b-2 border-gray-100">
+                            <div class="hidden lg:flex gap-2 w-auto">
+                                <i class="uil uil-square-shape"></i>
+                                <i class="uil uil-star"></i>
+                            </div>
+                            <div class="w-[70%] md:w-[95%] flex flex-col md:flex-row justify-start items-start md:items-center gap-3">
+                                <p class="text-[1.15rem] w-full md:w-[25%] font-semibold">Stack Exchange</p>
+                                <p class="text-sm md:text-[1.15rem] font-extralight md:font-normal mt-3 md:mt-0">1 new items in your Stackexchange inbox..</p>
+                            </div>                            
+                            <p class="text-sm md:text-[1.1rem] w-[25%] md:w-[15%] text-end">Mar 2</p>                        
+                        </div>       
+                        <div class="flex items-center justify-start gap-6 py-5 border-b-2 border-gray-100">
+                            <div class="hidden lg:flex gap-2 w-auto">
+                                <i class="uil uil-square-shape"></i>
+                                <i class="uil uil-star"></i>
+                            </div>
+                            <div class="w-[70%] md:w-[95%] flex flex-col md:flex-row justify-start items-start md:items-center gap-3">
+                                <p class="text-[1.15rem] w-full md:w-[25%] font-semibold">Google Drive Team</p>
+                                <p class="text-sm md:text-[1.15rem] font-extralight md:font-normal mt-3 md:mt-0">Trip home from Colombo has been arranged, then...</p>
+                            </div>                            
+                            <p class="text-sm md:text-[1.1rem] w-[25%] md:w-[15%] text-end">Mar 1</p>                        
+                        </div>
+                        <div class="flex items-center justify-start gap-6 py-5 border-b-2 border-gray-100">
+                            <div class="hidden lg:flex gap-2 w-auto">
+                                <i class="uil uil-square-shape"></i>
+                                <i class="uil uil-star"></i>
+                            </div>
+                            <div class="w-[70%] md:w-[95%] flex flex-col md:flex-row justify-start items-start md:items-center gap-3">
+                                <p class="text-[1.15rem] w-full md:w-[25%] font-semibold">Peter, me (3)</p>
+                                <p class="text-sm md:text-[1.15rem] font-extralight md:font-normal mt-3 md:mt-0">Colombo has been arranged, then...</p>
+                            </div>                            
+                            <p class="text-sm md:text-[1.1rem] w-[25%] md:w-[15%] text-end">Feb 29</p>                        
+                        </div>   
+                        <div class="flex items-center justify-start gap-6 py-5 border-b-2 border-gray-100">
+                            <div class="hidden lg:flex gap-2 w-auto">
+                                <i class="uil uil-square-shape"></i>
+                                <i class="uil uil-star"></i>
+                            </div>
+                            <div class="w-[70%] md:w-[95%] flex flex-col md:flex-row justify-start items-start md:items-center gap-3">
+                                <p class="text-[1.15rem] w-full md:w-[25%] font-semibold">me, Susanna (11)</p>
+                                <p class="text-sm md:text-[1.15rem] font-extralight md:font-normal mt-3 md:mt-0">Hello – Trip home from Colombo has been arranged, then...</p>
+                            </div>                            
+                            <p class="text-sm md:text-[1.1rem] w-[25%] md:w-[15%] text-end">Feb 28</p>                        
+                        </div> 
+                        <div class="flex items-center justify-start gap-6 py-5 border-b-2 border-gray-100">
+                            <div class="hidden lg:flex gap-2 w-auto">
+                                <i class="uil uil-square-shape"></i>
+                                <i class="uil uil-star"></i>
+                            </div>
+                            <div class="w-[70%] md:w-[95%] flex flex-col md:flex-row justify-start items-start md:items-center gap-3">
+                                <p class="text-[1.15rem] w-full md:w-[25%] font-semibold">Tobias Berggren</p>
+                                <p class="text-sm md:text-[1.15rem] font-extralight md:font-normal mt-3 md:mt-0">Let's go fishing! – Hey, You wanna join me and Fred at the...</p>
+                            </div>                            
+                            <p class="text-sm md:text-[1.1rem] w-[25%] md:w-[15%] text-end">Feb 26</p>                        
+                        </div> 
+                        <div class="flex items-center justify-start gap-6 py-5 border-b-2 border-gray-100">
+                            <div class="hidden lg:flex gap-2 w-auto">
+                                <i class="uil uil-square-shape"></i>
+                                <i class="uil uil-star"></i>
+                            </div>
+                            <div class="w-[70%] md:w-[95%] flex flex-col md:flex-row justify-start items-start md:items-center gap-3">
+                                <p class="text-[1.15rem] w-full md:w-[25%] font-semibold">Erik, me (5)</p>
+                                <p class="text-sm md:text-[1.15rem] font-extralight md:font-normal mt-3 md:mt-0">Hello – Trip home from Colombo has been arranged, then...</p>
+                            </div>                            
+                            <p class="text-sm md:text-[1.1rem] w-[25%] md:w-[15%] text-end">Feb 25</p>                        
+                        </div>                                                                              
+                    </div>
+                </div>                
+            </div>                   
+        </div>
+    </div>
+</body>
+</html>
